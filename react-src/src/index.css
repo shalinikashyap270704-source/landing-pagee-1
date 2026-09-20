@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #050810;
+}
+::selection {
+  background: #3fd8e0;
+  color: #001417;
+}
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/5 px-3 py-1.5 font-mono text-xs tracking-wide text-cyan;
+}
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan to-ablue px-5 py-3.5 font-semibold text-navy-950 shadow-[0_8px_30px_-8px_rgba(76,141,255,0.55)] transition hover:-translate-y-0.5;
+}
+.btn-ghost {
+  @apply inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3.5 font-medium text-white transition hover:border-cyan hover:bg-cyan/5;
+}
